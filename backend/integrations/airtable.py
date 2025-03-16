@@ -103,6 +103,7 @@ async def get_airtable_credentials(user_id, org_id):
     credentials = json.loads(credentials)
     await delete_key_redis(f'airtable_credentials:{org_id}:{user_id}')
 
+    print(credentials)
     return credentials
 
 def create_integration_item_metadata_object(

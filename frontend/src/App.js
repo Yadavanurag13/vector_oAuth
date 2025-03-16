@@ -1,3 +1,4 @@
+import React from 'react';
 import { IntegrationForm } from './integration-form';
 
 function App() {
